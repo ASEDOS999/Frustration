@@ -86,39 +86,62 @@ $$M(C) = \text{SF}(C) \dot \min\left(1, \frac{\text{MinSize}}{10}\right)$$
 \label{sec:cluster}
 
 \begin{figure}[ht!]  
+
 \vspace{-4ex} \centering \subfigure[]{
-\includegraphics[width=0.3\linewidth]{Images/ManyClusters/1.pdf} \label{1} }  
-\hspace{2ex}
+\includegraphics[width=0.3\linewidth]{Images/ManyClusters/17.pdf} \label{1} }  
+%\hspace{2ex}
 \subfigure[]{
-\includegraphics[width=0.3\linewidth]{Images/ManyClusters/2.pdf} \label{2} }  
-\vspace{2ex} \centering \subfigure[]{
-\includegraphics[width=0.3\linewidth]{Images/ManyClusters/3.pdf} \label{3} }  
-\hspace{2ex}
+\includegraphics[width=0.3\linewidth]{Images/ManyClusters/16.pdf} \label{2} }  
+%\hspace{2ex} 
+\centering \subfigure[]{
+\includegraphics[width=0.3\linewidth]{Images/ManyClusters/15.pdf} \label{3} }  
+
+\vspace{2ex}
 \subfigure[]{
-\includegraphics[width=0.3\linewidth]{Images/ManyClusters/4.pdf} \label{4} }  
-\vspace{4ex} \centering \subfigure[]{
-\includegraphics[width=0.3\linewidth]{Images/ManyClusters/5.pdf} \label{5} }  
-%\hspace{0.4ex}
+\includegraphics[width=0.3\linewidth]{Images/ManyClusters/14.pdf} \label{4} }  
+%\hspace{0.4ex} 
+\centering \subfigure[]{
+\includegraphics[width=0.3\linewidth]{Images/ManyClusters/13.pdf} \label{5} }  
+%\hspace{4ex}
 \subfigure[]{
-\includegraphics[width=0.3\linewidth]{Images/ManyClusters/6.pdf} \label{6} }  
-%\hspace{1ex}
- \centering \subfigure[]{
-\includegraphics[width=0.3\linewidth]{Images/ManyClusters/7.pdf} \label{7} }  
-\caption{Сравненение распределения для наиболее различающихся признаков (перечислены в порядке возрастания): \subref{1}  Коэффициент логической связности; \subref{2}  Часть речи: местоимение-существительное; \subref{3} Средняя длина слов (в количестве символов); \subref{4}  Коэффициент Трейгера; \subref{5}  Число знаков пунктуации / Число слов; \subref{6}  Часть речи: глагол; \subref{7}  Коэффициент опредмеченности действия (кол. глаголов / кол. существительных).} \label{hist1}
+\includegraphics[width=0.3\linewidth]{Images/ManyClusters/12.pdf} \label{6} }  
+
+\vspace{2ex}
+\subfigure[]{
+\includegraphics[width=0.3\linewidth]{Images/ManyClusters/11.pdf} \label{7} }  
+%\hspace{0.4ex} 
+\centering \subfigure[]{
+\includegraphics[width=0.3\linewidth]{Images/ManyClusters/10.pdf} \label{8} }  
+%\hspace{4ex}
+\subfigure[]{
+\includegraphics[width=0.3\linewidth]{Images/ManyClusters/9.pdf} \label{9} }  
+\vspace{1ex}
+\caption{Сравненение распределения для наиболее различающихся признаков (перечислены в порядке возрастания): 
+\subref{1} Доля глаголов прошедшего времени, первого лица, единственного числа; 
+\subref{2} Доля глаголов 1 лица; 
+\subref{3} Часть речи: существительное; 
+\subref{4} Часть речи: местоимение-существительное; 
+\subref{5} Средняя длина слов (в количестве символов); 
+\subref{6} Коэффициент опредмеченности действия (кол. глаголов / кол. существительных); 
+\subref{7} Доля местоимений 1 лица ед. числа; 
+\subref{8} Сем. роль: предикат; 
+\subref{9} Число знаков пунктуации / Число слов.} \label{hist1}
 \end{figure}
 
-Выделим наиболее различающиеся признаки у двух кластеров. Мы это сделаем следующим образом: высчитать среднее значение всех признаков для каждого кластера, получить разницу между ними и выбрать все, у которых информативность больше 75$\%$ от максимальной.
+Выделим наиболее различающиеся признаки у двух кластеров. Мы это сделаем следующим образом: высчитать среднее значение всех признаков для каждого кластера, получить разницу между ними и выбрать топ-9 этих признаков.
 
-Наиболее различающиеся признаки получаются следующие (записаны в порядке возрастания):
+Наиболее различающиеся признаки получаются следующие (записаны в порядке убывания):
 
 \begin{itemize}
-\item  Коэффициент логической связности
-\item  Часть речи: местоимение-существительное
-\item  Средняя длина слов (в количестве символов)
-\item  Коэффициент Трейгера
-\item  Число знаков пунктуации / Число слов
-\item  Часть речи: глагол
-\item  Коэффициент опредмеченности действия (кол. глаголов / кол. существительных)
+\item Доля глаголов прошедшего времени, первого лица, единственного числа
+\item Доля глаголов 1 лица
+\item Часть речи: существительное
+\item Часть речи: местоимение-существительное
+\item Средняя длина слов (в количестве символов)
+\item Коэффициент опредмеченности действия (кол. глаголов / кол. существительных)
+\item Доля местоимений 1 лица ед. числа
+\item Сем. роль: предикат
+\item Число знаков пунктуации / Число слов
 \end{itemize}
 
 
